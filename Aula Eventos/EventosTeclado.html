@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Teclado</title>
+
+    <script>
+        function acao1(){
+            alert("Evento OnKeyDown")
+        }
+
+        function acao2(){
+            alert("Evento OnKeyPress você teclou: "+ event.key)
+        }
+
+        function acao3(){
+            alert("Evento OnKeyUp")
+        }
+        function acao4(){
+            //alert("Janela Ajustada")
+        }
+
+        function acao5(){
+            //alert("Scroll acionado")
+        }
+    </script>
+</head>
+<body onresize="acao4()" onscroll="acao5()">
+    <label>
+        OnKeyDown:
+    </label>
+     <input onkeydown="acao1()" type="text"><br><br>
+
+    <label>
+        OnKeyPress:
+    </label>
+    <input onkeypress="acao2()" type="text"><br><br>
+
+    <label>
+        OnKeyUp: 
+    </label>
+    <input onkeyup="acao3()" type="text"><br><br>
+    
+    <div style="height: 30000px;"></div>
+</body>
+</html>

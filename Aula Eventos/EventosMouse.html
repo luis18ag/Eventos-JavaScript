@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Mouse</title>
+    <Style>
+        .principal {
+            width: 150px;
+            height: 150px;
+            border-radius: 75px;
+            background-color: #0047AB;
+            cursor: pointer;
+        }
+    </Style>
+
+    <script>
+        function acao(){
+            alert("Este é um evento de clique")
+            document.getElementById("principal").style.backgroundColor = "#FFB854";
+        }
+
+        function acao1(){
+            alert("Este é um evento de Duplo clique")
+            document.getElementById("principal1").style.width = "200px"
+            document.getElementById("principal1").style.height = "200px"
+            document.getElementById("principal1").style.borderRadius = "100px"
+        }
+
+        function acao2(){
+            alert("Esse é um evento de MouseUp clique")
+             document.getElementById("principal2").style.borderRadius = "0px"
+        }
+
+        function acao3(){
+            alert("Esse é um evento de MouseOver")
+            document.getElementById("principal3").style.width = "100px"
+            document.getElementById("principal3").style.height = "100px"
+            document.getElementById("principal3").style.borderRadius = "50px"
+        }
+
+        function acao4(){
+            //alert("Esse é um evento de MouseOut")
+            document.getElementById("principal4").style.width = "200px"
+            document.getElementById("principal4").style.height = "200px"
+            document.getElementById("principal4").style.borderRadius = "100px"
+        }
+        function acao4_1(){
+            //alert("Esse é um evento de MouseOut")
+            document.getElementById("principal4").style.width = "150px"
+            document.getElementById("principal4").style.height = "150px"
+            document.getElementById("principal4").style.borderRadius = "75px"
+        }
+    </script>
+</head>
+<body>
+    <div id="principal" class="principal" onclick="acao()"></div>
+    <div id="principal1" class="principal" ondblclick="acao1()"></div>
+    <div id="principal2" class="principal" onmouseup="acao2()"></div>
+    <div id="principal3" class="principal" onmouseover="acao3()"></div>
+    <div id="principal4" class="principal" onmouseover="acao4()" onmouseout="acao4_1()"></div>
+</body>
+</html>

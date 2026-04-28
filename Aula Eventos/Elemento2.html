@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Mamipulação do HTML DOM</h2>
+    <p class="intro" id="intro">Encontrando elementos por ID/CLASS/TAG</p>
+    <p>Este exemplo mostra como funciona <b>getElementById</b> metodo.</p>
+    <p id="demo"></p>
+    <button onclick="acao()">OK</button>
+
+    <script>
+        function acao(){
+            const element = document.getElementById("intro");
+            const element2 = document.getElementsByTagName("p")
+            const x = document.getElementsByClassName("intro")
+
+            document.getElementById("demo").innerHTML = 
+            "O texto da tag com id intro é: " + element.innerHTML+
+            "<br>O texto da tag com id intro é: " + element2[0].innerHTML   +
+            "<br>O texto da tag com id intro é: " + x[0].innerHTML;
+        }
+    </script>
+</body>
+</html>
