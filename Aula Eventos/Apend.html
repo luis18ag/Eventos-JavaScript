@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function minhaFuncao(){
+            const div = document.getElementById("minhaDiv");
+            const h3 = document.createElement("h3");
+            div.append(h3);
+            h3.append("Hello! este é o append no h3")
+        }
+    </script>
+</head>
+<body>
+    <h1>Objetos Elementos</h1>
+    <h2>Elemento append()</h2>
+    <div id="minhaDiv">Hello</div>
+    <p>clique aqui para inserir depois da DIV:</p>
+    <button onclick="minhaFuncao()">clique aqui</button>
+</body>
+</html>

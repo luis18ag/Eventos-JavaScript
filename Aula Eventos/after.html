@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function minhaFuncao(){
+            const div = document.getElementById("minhaDiv");
+            //div.after("World!");
+
+            document.getElementById("minhaDiv").after("World!")
+        }
+    </script>
+</head>
+<body>
+    <h1>Objetos Elementos</h1>
+    <h2>Elemento after()</h2>
+
+    <div id="minhaDiv">Hello</div>
+
+    <p>Clique para inserir depois da DIV:</p>
+    <button onclick="minhaFuncao()">Clique Aqui</button>
+</body>
+</html>

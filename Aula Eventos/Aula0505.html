@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function usarInner(){
+            let texto ="<h1>" + document.getElementById("myP").innerHTML + "</h1>";
+            document.getElementById("demo").innerText = texto
+            //document.getElementById("demo").innerHTML = texto
+            //document.getElementById("demo").textContent = texto
+
+        }
+
+    </script>
+</head>
+<body>
+   <h1>Diferença entre Elementos de texto/HTML/Conteudo</h1>
+   <h2>Diferença entre Elementos de texto/HTML/Conteudo(innerText, innerHTML and textContent)</h2>
+   <p id="myP"> Este elemento tem espações extras e tambem contem elementos de <span>Span</span></p>
+   <div>
+        <pre id="demo"></pre>
+   </div>
+
+   <button onclick="usarInner()">Usar Inner</button>
+</body>
+</html>

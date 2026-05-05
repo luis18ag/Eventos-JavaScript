@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getFocus(){
+           document.getElementById("meuTexto").focus();
+        }
+
+        function loseFocus(){
+            document.getElementById("meuTexto").blur();
+        }
+    </script>
+</head>
+<body>
+    <h1>Objetos Elementos</h1>
+    <h2>Elemento blour()</h2>
+    <input type="text" id="meuTexto" value="campo de texto">
+    <p>Clique no botão para o teste</p>
+    <button onclick="getFocus()">Obter Foco</button>
+    <button onclick="loseFocus()">Perder Foco</button>
+</body>
+</html>
